@@ -1,0 +1,91 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+.bodyImg{
+
+    width: 100%;
+    height: 600px;
+    background-image: url(bg.jpg);
+    background-size: cover;
+
+}
+
+.line1{
+
+    color:aliceblue;
+    text-align: center;
+    transform: translate(0px, 200px);
+    font-size: 0.5cm;
+    font-family:cursive;
+    animation: colorchange linear infinite 15s;
+}
+
+.grid{ 
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+.grid img{
+
+    align-content: center;
+    margin:0.5cm;
+    padding:0.5cm;
+    border: 2px solid black;
+    border-radius: 1cm;
+}
+
+.origami{
+
+    margin:0.5cm;
+    padding:0.5cm;
+    text-align: center;
+    background: white;
+    width:300px;
+    font-family: fantasy;
+    transition-property: transform, background-color;
+    transition-duration: 0.7s;
+
+}
+
+.origami:hover{
+    transform: scale(1.1);
+    background-color: rgb(27, 255, 57);
+}
+
+.grid2{ 
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+
+}
+
+.grid2 img{
+
+    align-content: center;
+    margin:0.5cm;
+    padding:0.5cm;
+    border: 2px solid black;
+    border-radius: 1cm;
+}
+
+@keyframes colorchange{
+    0%{
+        color: white;
+    }
+    25%{
+        color: rgb(255, 72, 72);
+    }
+    50%{
+        color:aqua;
+    }
+    75%{
+        color:lightcyan
+    }
+    100%{
+        color:rgb(255, 255, 255);
+    }
+
+}
